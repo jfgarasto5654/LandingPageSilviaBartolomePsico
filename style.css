@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+:root {
+    /* Colores principales */
+    --primary-color: #FFA500; /* Naranja */
+    --secondary-color: #FFDAB9; /* Melocotón claro, para fondos */
+    --dark-color: #333; /* Texto oscuro */
+    --light-color: #FFFFFF; /* Blanco puro */
+    --text-color-on-primary: #FFFFFF; /* Texto blanco para fondos naranjas */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.divprincp {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color); /* Fondo general blanco */
+}
+
+/* Sección principal (Hero) */
+.hero {
+    background-color: var(--primary-color); /* Fondo naranja */
+    color: var(--text-color-on-primary); /* Texto blanco */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* Botón de Llamada a la Acción (CTA) */
+.cta-button {
+    display: inline-block;
+    background-color: var(--light-color); /* Botón blanco */
+    color: var(--primary-color); /* Texto naranja */
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0; /* Un gris muy suave al pasar el mouse */
+    color: var(--primary-color);
+}
+
+/* Secciones generales */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--primary-color); /* Títulos de sección en naranja */
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Tarjetas de servicios */
+.card {
+    background-color: var(--light-color); /* Fondo de tarjeta blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    color: var(--primary-color); /* Títulos de tarjeta en naranja */
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Pequeño efecto al pasar el mouse */
+}
+
+/* Sección "Quiénes Somos" con fondo secundario */
+.bg-light {
+    background-color: var(--secondary-color); /* Fondo melocotón claro */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+    flex-wrap: wrap; /* Para que se ajuste mejor en móviles */
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px; /* Ancho mínimo para que no se vea muy comprimido */
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center; /* Centrar la imagen si es más pequeña */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px; /* Limitar el tamaño máximo de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario de contacto */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color); /* Fondo oscuro */
+    color: var(--text-color-on-primary); /* Texto blanco */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .container, .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-text, .about-image {
+        min-width: unset; /* Eliminar el ancho mínimo para móviles */
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Botón de Llamada a la Acción (CTA) */
+.cta-button {
+    display: inline-block;
+    background-color: var(--light-color); /* Blanco */
+    color: var(--primary-color); /* Naranja */
+    padding: 15px 40px; /* Aumentamos el padding para hacerlo más grande */
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem; /* Hacemos la fuente un poco más grande */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    transition: all 0.3s ease; /* Transición para todos los cambios al pasar el mouse */
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color); /* Fondo naranja al pasar el mouse */
+    color: var(--light-color); /* Texto blanco al pasar el mouse */
+    transform: translateY(-3px); /* Pequeño desplazamiento hacia arriba */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.carrusell{
+
+}
