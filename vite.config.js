@@ -1,16 +1,17 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
-import path from 'path'; // <--- Importa el módulo 'path'
+import path from 'path';
 
 export default defineConfig({
+  base: '/LandingPageSilviaBartolomePsico/',  // 👈 Aquí va el nombre exacto de tu repo
   plugins: [
     react(),
     tailwindcss(),
   ],
-  resolve: { // <--- Agrega la propiedad 'resolve'
+  resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'), // <--- Configura el alias '@'
+      '@': path.resolve(__dirname, './src'),
       '~': path.resolve(__dirname, './lib'),
     },
   },
