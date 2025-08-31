@@ -2,56 +2,48 @@
 import React, { useState, useEffect } from 'react';
 import '../style.css'
 import { AnimatedTestimonialsDemo } from './components/AnimatedTestimonials'; // Asegúrate de que la ruta sea correcta
-
+import { TextGenerateEffectDemo } from './components/TextGenerateEf'; // Asegúrate de que la ruta sea correcta
+import NeuropsychologyScroll from './components/NeuropsychologyScroll';
 
 // Asegúrate de que este componente esté en su propio archivo y de que la ruta sea correcta.
 // import { AnimatedTestimonialsDemo } from './components/AnimatedTestimonials'; 
 
 function App() {
-  const [heroText, setHeroText] = useState("");
-  const originalText = "Acompañamiento Psicopedagógico Profesional";
 
-  useEffect(() => {
-    let i = 0;
-    const typingInterval = setInterval(() => {
-      if (i < originalText.length) {
-        setHeroText((prevText) => prevText + originalText.charAt(i));
-        i++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 50);
-
-    return () => clearInterval(typingInterval); // Limpia el intervalo al desmontar el componente
-  }, []);
 
   return (
+    
+    
     <div id="divprincp">
       <header className="hero">
         <div className="hero-content">
-          <h1>{heroText}</h1>
+          <TextGenerateEffectDemo/>
           <p>Ayudamos a niños y adolescentes a superar sus desafíos de aprendizaje y a alcanzar su máximo potencial.</p>
           <a href="#contacto" className="cta-button">Agenda tu cita</a>
         </div>
       </header>
+      <div>
 
+      </div>I
       <section id="servicios" className="section">
         <h2>Nuestros Servicios</h2>
         <div className="container">
           <div className="card">
-            <h3>Evaluación Psicopedagógica</h3>
+            <h3 className="titulo-servicios">Evaluación Neuropsicologicas</h3>
             <p>Identificamos las causas de las dificultades en el aprendizaje.</p>
           </div>
           <div className="card">
-            <h3>Terapia Individual</h3>
+            <h3 className="titulo-servicios">Terapia Individual</h3>
             <p>Sesiones personalizadas para desarrollar habilidades cognitivas y de estudio.</p>
           </div>
           <div className="card">
-            <h3>Orientación a Padres</h3>
+            <h3 className="titulo-servicios">Orientación a Padres</h3>
             <p>Herramientas y estrategias para apoyar a sus hijos en casa.</p>
           </div>
         </div>
       </section>
+
+      <NeuropsychologyScroll />
 
       <section id="testimonios" className="section flex flex-col items-center">
         <h2 className="text-center">Testimonios de Padres</h2>
