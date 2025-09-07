@@ -47,7 +47,7 @@ export const TextGenerateEffect = ({
         <div
           // Use 'cn' here to merge the new styles with the existing ones.
           className={cn(
-            "text-white text-5xl md:text-6xl font-poppins-titulos",
+            "text-white text-4xl md:text-6xl font-poppins-titulos",
             className
           )}
         >

@@ -25,25 +25,28 @@ function App() {
       <div>
 
       </div>I
-      <section id="servicios" className="section">
-        <h2>Nuestros Servicios</h2>
-        <div className="container">
-          <div className="card">
-            <h3 className="titulo-servicios">Evaluación Neuropsicologicas</h3>
-            <p>Identificamos las causas de las dificultades en el aprendizaje.</p>
-          </div>
-          <div className="card">
-            <h3 className="titulo-servicios">Terapia Individual</h3>
-            <p>Sesiones personalizadas para desarrollar habilidades cognitivas y de estudio.</p>
-          </div>
-          <div className="card">
-            <h3 className="titulo-servicios">Orientación a Padres</h3>
-            <p>Herramientas y estrategias para apoyar a sus hijos en casa.</p>
-          </div>
-        </div>
-      </section>
+      <section id="servicios" className="pt-16 pb-24 flex flex-col items-center mb-24">
+  <h3 className="titulo-servicios text-lg font-semibold mb-2">Servicios</h3>
+  <div className="flex flex-wrap justify-center gap-6 max-w-5xl">
+    <div className="card p-6 rounded-2xl shadow-lg bg-white w-72 text-center">
+      <h3 className="titulo-servicios text-lg font-semibold mb-2">Evaluación Neuropsicológicas</h3>
+      <p>Identificamos las causas de las dificultades en el aprendizaje.</p>
+    </div>
+    <div className="card p-6 rounded-2xl shadow-lg bg-white w-72 text-center">
+      <h3 className="titulo-servicios text-lg font-semibold mb-2">Terapia Individual</h3>
+      <p>Sesiones personalizadas para desarrollar habilidades cognitivas y de estudio.</p>
+    </div>
+    <div className="card p-6 rounded-2xl shadow-lg bg-white w-72 text-center">
+      <h3 className="titulo-servicios text-lg font-semibold mb-2">Orientación a Padres</h3>
+      <p>Herramientas y estrategias para apoyar a sus hijos en casa.</p>
+    </div>
+  </div>
+</section>
 
+
+      <section className="mt-24 !mt-24">
       <NeuropsychologyScroll />
+      </section>
 
       <section id="testimonios" className="section flex flex-col items-center">
         <h2 className="text-center">Testimonios de Padres</h2>
@@ -68,7 +71,7 @@ function App() {
         <p>¿Tienes dudas o quieres agendar una cita? Escríbenos.</p>
         <div id="contacto" className="section">
           <p>Haz clic en el botón para enviarnos un mensaje por WhatsApp.</p>
-          <a href="https://wa.me/XXXXXXXXXX?text=Hola,%20quisiera%20agendar%20una%20cita%20con%20la%20psicopedagoga." className="cta-button whatsapp-button">Enviar Mensaje por WhatsApp</a>
+          <a href="https://wa.me/1140237404?text=Hola,%20quisiera%20agendar%20una%20cita%20con%20la%20psicopedagoga." className="cta-button whatsapp-button">Enviar Mensaje por WhatsApp</a>
         </div>
       </section>
 

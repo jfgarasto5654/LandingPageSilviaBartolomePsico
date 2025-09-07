@@ -9,18 +9,18 @@ const NeuropsychologyScroll = () => {
             {/* Mobile Image */}
             <source
               media="(max-width: 600px)"
-              srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg"
+              srcSet="https://img.freepik.com/vector-premium/dibujo-nina-nino-sosteniendo-lista-comprobacion_1264985-2494.jpg"
             />
             {/* Tablet and above Image */}
             <source
               media="(min-width: 601px)"
-              srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg"
+              srcSet="https://img.freepik.com/vector-premium/dibujo-nina-nino-sosteniendo-lista-comprobacion_1264985-2494.jpg"
             />
             <img
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg"
-              alt="dermatologist"
+              src="https://img.freepik.com/vector-premium/dibujo-nina-nino-sosteniendo-lista-comprobacion_1264985-2494.jpg"
+              alt="evaluacion"
               width="324"
               height="467"
             />

@@ -60,8 +60,9 @@
 
 /* Secciones generales */
 .section {
-    padding: 60px 20px;
-    text-align: center;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 100px; /* separa de lo que venga después */
 }
 
 .section h2 {
