@@ -4,7 +4,7 @@ import '../style.css'
 import { AnimatedTestimonialsDemo } from './components/AnimatedTestimonials'; // Asegúrate de que la ruta sea correcta
 import { TextGenerateEffectDemo } from './components/TextGenerateEf'; // Asegúrate de que la ruta sea correcta
 import NeuropsychologyScroll from './components/NeuropsychologyScroll';
-
+import ImgSilvia from './img/fotoperfilig.jpg';
 // Asegúrate de que este componente esté en su propio archivo y de que la ruta sea correcta.
 // import { AnimatedTestimonialsDemo } from './components/AnimatedTestimonials'; 
 
@@ -61,7 +61,7 @@ function App() {
           </div>
           <div className="about-image">
             {/* Si tienes una imagen, usa la ruta correcta aquí */}
-            <img src="URL_DE_TU_FOTO.jpg" alt="Psicopedagoga Silvia Bartolome" />
+            <img src={ImgSilvia} alt="Psicopedagoga Silvia Bartolome" />
           </div>
         </div>
       </section>
@@ -71,7 +71,10 @@ function App() {
         <p>¿Tienes dudas o quieres agendar una cita? Escríbenos.</p>
         <div id="contacto" className="section">
           <p>Haz clic en el botón para enviarnos un mensaje por WhatsApp.</p>
-          <a href="https://wa.me/1140237404?text=Hola,%20quisiera%20agendar%20una%20cita%20con%20la%20psicopedagoga." className="cta-button whatsapp-button">Enviar Mensaje por WhatsApp</a>
+          <a href="https://wa.me/541140237404?text=Hola,%20quisiera%20consultar%20con%20psicopedagogia." className="cta-button whatsapp-button">
+            Enviar Mensaje por WhatsApp
+          </a>
+
         </div>
       </section>
 
