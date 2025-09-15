@@ -5,7 +5,7 @@ export function AnimatedTestimonialsDemo() {
     {
       quote:
         "Conocí a Silvia cuando mi hija estaba cursando los primeros años de la escuela primaria. Recurrí a ella porque necesitaba apoyo escolar simplemente. Y desde el día uno que la conocimos supe que era la maestra indicada, ella no solo la ayudó para reforzar conocimientos propios de la edad sino que la tomo de la mano y la acompaño en todo su recorrido por dos años. Ahora mi niña tiene 14 años y lejos de olvidarse de aquella seño que la ayudó, siempre la recuerda con muchísimo afecto y cariño",
-      name: "Sarah Chen",
+      name: "Mama Julieta",
       designation: "Product Manager at TechFlow",
       src: "https://eresmama.com/wp-content/uploads/2020/03/nino-escribiendo-carta-mano.jpg?auto=webp&quality=7500&width=640&crop=16:9,smart,safe&format=webp&optimize=medium&dpr=2&fit=cover&fm=webp&q=75&w=640&h=360",
     },
@@ -18,24 +18,17 @@ export function AnimatedTestimonialsDemo() {
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
+        "Llegamos a la consulta con muchas dudas y miedos sobre el aprendizaje de nuestro hijo. Desde el primer momento sentimos confianza y acompañamiento. Gracias al trabajo psicopedagógico, nuestro hijo no solo mejoró en la escuela, sino que también recuperó la seguridad en sí mismo. Como padres, nos sentimos escuchados y guiados en cada paso del proceso.",
+      name: "Papa Pedro",
+      designation: "PP ",
       src: "https://res.cloudinary.com/elvocerito/image/upload/v1624986014/beneficios_de_jugar_con_plastilina_1_9407dc93fd.png",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
+        "Ver los progresos de nuestra hija fue muy emocionante. Con la ayuda y la paciencia de la psicopedagoga, aprendió a disfrutar de los desafíos y nosotros, como familia, también aprendimos nuevas formas de acompañarla. Hoy la vemos más segura, motivada y feliz.",
+      name: "Padres de Lourdes",
+      designation: "PL",
       src: "https://blog.psiqueasy.com.br/wp-content/uploads/2023/08/provas-de-memorizacao.jpg",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://plastilina.top/wp-content/uploads/2019/03/beneficios-de-jugar-con-la-plastilina-1296785_w670-optimized.jpg",
     },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
