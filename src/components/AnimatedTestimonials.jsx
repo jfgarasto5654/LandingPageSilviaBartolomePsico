@@ -13,7 +13,7 @@ export function AnimatedTestimonialsDemo() {
       quote:
         "Silvia es la Psicopedagoga de mi hija Martina  hace más de 8 años. Desde que la conocimos creamos un gran vínculo. Es una excelente  profesional y tiene un trato muy amoroso con los pacientes. Siempre dispuesta y atenta a las necesidades de Martu.",
       name: "MM",
-      designation: "Mama Julieta",
+      designation: "Mama Martina",
       src: "https://elroldanense.com/wp-content/uploads/2020/09/psicopedagogo-1.jpg",
     },
     {
